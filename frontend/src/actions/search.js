@@ -1,3 +1,4 @@
+\
 export const GET_SEARCH = "GET_SEARCH"
 export const RECEIVE_SEARCH = "RECEIVE_SEARCH"
 export const FAIL_SEARCH = "FAIL_SEARCH"

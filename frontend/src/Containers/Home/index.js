@@ -26,18 +26,25 @@ class Home extends Component {
       ingredients: ["milk"],
     }
   }
+  //fetch request tp API using search term to return recipe with those terms
+  
   fetchSearch() {
     // TODO: something is missing here for fetching
   }
+  //takes in an event and updates state with the search term (ingredient)
   handleSearch(event) {
     const term = event.target.value
     this.setState({ term })
   }
   handleIngredient(ingredient, event) {
     const { ingredients } = { ...this.state }
+    //if box for ingredient is checked, push ingredient into array
     if (event.target.checked) {
       ingredients.push(ingredient)
     } else {
+      // if box is not checked, find ingredient in ingredients array, 
+      //splice and return array of spliced ingredient
+      //update state with that ingredient
       const foundIngredient = ingredients.indexOf(ingredient)
       ingredients.splice(foundIngredient, 1)
     }
@@ -85,7 +92,8 @@ class Home extends Component {
         <Divider />
         {/*
           TODO: Add a recipe component here.
-          I'm expecting you to have it return null or a component based on the redux state, not passing any props from here
+          I'm expecting you to have it return null or a component based on the redux state,
+           not passing any props from here
           I want to see how you wire up a component with connect and build actions.
         */}
       </HomeWrapper>

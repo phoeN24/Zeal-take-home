@@ -18,9 +18,9 @@ hello, and welcome to the backend portion of the take home. please make sure to 
 `response`: Array of `{id:string, name:string}`
 
 ## TODO
+1. In 'routes/recipe.ts' fetch and return recipe
 
 there's a missing api, here's the spec product has given you to implement:
-
 ### /api/recipe/:id
 
 `method`: GET
